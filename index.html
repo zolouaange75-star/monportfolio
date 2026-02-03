@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Zoloua Ange - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Mon Portfolio</h1>
+            <h1 class="logo">Zoloua Ange</h1>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
@@ -24,7 +30,153 @@
         <div class="container">
             <img src="assets/images/profil.jpg" alt="Photo de profil" class="profile-img">
             <h2>Bienvenue sur mon portfolio</h2>
-            <p>Je suis Zoloua Ange, étudiant en informatique en première année passionné par le développement web et la création de sites web interactifs et la cybersécurité.</p>
+            <p>Je suis <strong>Zoloua Ange</strong>, étudiant en informatique en première année passionné par le développement web et la cybersécurité.</p>
+            <a href="#contact" class="btn btn-primary">Me Contacter</a>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <img src="assets/images/profil.jpeg" alt="Photo de Zoloua Ange" class="about-photo">
+                    <p>Passionné par les nouvelles technologies, les outils de cybersécurité et l'Intelligence Artificielle.
+                    Je suis actuellement en première année d'informatique a l'Ecole superieure de gestion des sciences et de l'informatique (ESGIS) au Togo.</p>
+                    <p>Mon objectif est de devenir un ingénieur en cybersécurité plus precisement un pintesteur de la red team </p>
+                    <p>J'aime apprendre de nouvelles technologies et relever des défis techniques pour améliorer mes compétences.</p>
+                    <p></p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Projets Réalisés</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Langages Maîtrisés</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Engagement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Langages de Programmation</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>HTML</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils et Technologies</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>Git / GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>VS Code</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Intelligence Artificielle</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Canva</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Adobe Photoshop</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: _85%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Langues</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>Français</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Anglais Scolaire</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Ewé (Langue Nationale)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Systèmes et Réseaux</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>Installation de Systèmes d'Exploitation</span>
+                            <span>Creation et deployement de marchine virtuelle</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Maintenance Réseau WiFi Domestique</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Configuration Matériel</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -34,12 +186,90 @@
             <h2>Mes Projets</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3> Mon portfolio</h3>
-                    <p>Création de mon portfolio en HTML et CSS et javascript</p>
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/portfolio-thumb.jpg" alt="Portfolio" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/zolouaange75-star/portfolio" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Voir le Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mon Portfolio</h3>
+                        <p>Création de mon portfolio en HTML, CSS et JavaScript pour présenter mes projets et compétences de manière professionnelle.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="project-status"><i class="fas fa-check-circle"></i> Complété</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <a href="#" class="project-link">En savoir plus →</a>
+                    </div>
                 </div>
+
                 <div class="project-card">
-                    <h3>site web</h3>
-                    <p>Création d'un site web pour maitriser mon apprentissage des langages web tel que HTML, CSS et JavaScript</p>
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/website-thumb.jpg" alt="Site Web" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/zolouaange75-star" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Voir le Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Site Web Responsif</h3>
+                        <p>Création d'un site web moderne pour maîtriser les langages web et le responsive design. Design épuré et navigation fluide.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="project-status"><i class="fas fa-check-circle"></i> Complété</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Mobile First</span>
+                        </div>
+                        <a href="#" class="project-link">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/app-thumb.jpg" alt="Application Web" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/zolouaange75-star" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Voir l'App
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application Web Interactive</h3>
+                        <p>Développement d'une application web interactive avec gestion d'état dynamique et persistance des données en localStorage.</p>
+                        <div class="project-meta">
+                            <span class="project-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="project-status"><i class="fas fa-check-circle"></i> Complété</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                        </div>
+                        <a href="#" class="project-link">En savoir plus →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,15 +279,53 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Me Contacter</h2>
-            <p>Email: zolouaange75@gmail.com</p>
-            <p>LinkedIn: linkedin.com/in/zoloua-ange</p>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Envoyez-moi un message</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="email" placeholder="Votre email" required>
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Mes Coordonnées</h3>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:zolouaange75@gmail.com">zolouaange75@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        Disponible sur demande
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ange-zoloua-bb0376375" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/zolouaange75-star" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/+22891960656" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/just_ange_chil_" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+            <p>&copy; 2026 Zoloua Ange. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
+
