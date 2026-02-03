@@ -165,9 +165,23 @@ body {
     align-items: center;
 }
 
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-text p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+}
+
+.about-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 1.5rem;
 }
 
 .about-stats {
@@ -528,13 +542,26 @@ body {
         font-size: 1rem;
     }
 
-    .about-content,
-    .contact-content {
+    .about-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1.5rem auto;
     }
 
     .about-stats {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .skills-grid {
@@ -543,5 +570,32 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .about h2,
+    .skills h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+    }
+
+    .about-photo {
+        width: 120px;
+        height: 120px;
     }
 }
